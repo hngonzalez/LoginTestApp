@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML5 - Login</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <form id="loginForm">
+        <div class="container">
+            <div class="login">
+                <h1>LOGIN</h1>
+                <div class="inputBox">
+                    <input id="inUser" type="text" required>
+                    <img src="./img/1077114.svg" alt="">
+                    <label>Username</label>
+                </div>
+                <div class="inputBox">
+                    <input id="inPass" type="password" required>
+                    <img src="./img/846099.svg" alt="">
+                    <label>Password</label>
+                </div>
+                <div class="forgotPassBox">
+                    <a href="">Forgot Password?</a>
+                </div>
+                <button class="btnLogin">LOGIN</button>
+                <div class="registerBox">
+                    <a href="">Register</a>
+                </div>
+            </div>
+            <div class="forgotPass">
+    
+            </div>
+            <div class="register">
+    
+            </div>
+        </div>
+    </form>
+
+
+
+    <script src="./js/functions.js"></script>
+
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-app.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+        https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-auth.js"></script>
+
+    <script>
+    // Your web app's Firebase configuration
+    var firebaseConfig = {
+        apiKey: "AIzaSyCCgJP1O9pkDBJ2zUpBkB9w0abR-D9i4WU",
+        authDomain: "logintest-b1472.firebaseapp.com",
+        projectId: "logintest-b1472",
+        storageBucket: "logintest-b1472.appspot.com",
+        messagingSenderId: "341124904254",
+        appId: "1:341124904254:web:1f11e367fb2a95b160a86f"
+    };
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+    const auth = firebase.auth();
+
+    </script>
+</body>
+</html>
